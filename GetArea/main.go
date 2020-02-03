@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/micro/go-micro"
+	"github.com/micro/go-micro/service/grpc"
 	"github.com/micro/go-micro/util/log"
 	"zufang/GetArea/handler"
 	"zufang/GetArea/subscriber"
@@ -11,7 +12,7 @@ import (
 
 func main() {
 	// New Service
-	service := micro.NewService(
+	service := grpc.NewService(
 		micro.Name("go.micro.srv.GetArea"),
 		micro.Version("latest"),
 	)

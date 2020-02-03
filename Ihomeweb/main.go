@@ -25,6 +25,14 @@ func main() {
 
 	//获取地区信息
 	router.GET("/api/v1.0/areas", handler.GetArea)
+	//获取图形验证码
+	router.GET("/api/v1.0/imagecode/:uuid", handler.GetImageCd)
+	//获取短信验证码
+	router.GET("/api/v1.0/smscode/:mobile", handler.GetSmsCd)
+	//注册
+	router.POST("/api/v1.0/users", handler.PostReg)
+	//获取session
+	router.GET("/api/v1.0/session", handler.GetSession)
 
 	//映射静态页面
 	router.NotFound = http.FileServer(http.Dir("html"))
