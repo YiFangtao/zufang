@@ -11,5 +11,6 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/micro/go-micro v1.18.0
+	github.com/tedcy/fdfs_client v0.0.0-20200106031142-21a04994525a
 	golang.org/x/image v0.0.0-20200119044424-58c23975cae1 // indirect
 )

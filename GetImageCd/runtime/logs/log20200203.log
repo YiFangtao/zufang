@@ -10,3 +10,6 @@
 [INFO][GetImageCd.go:22]2020/02/03 12:34:36 [-------GET /api/v1.0/imagecd]
 [INFO][GetImageCd.go:38]2020/02/03 12:34:36 [4392]
 [INFO][GetImageCd.go:66]2020/02/03 12:34:36 [map[conn:192.168.3.131:6379 dbNum:0 key:ihome password:123456]]
+[INFO][GetImageCd.go:22]2020/02/03 14:05:24 [-------GET /api/v1.0/imagecd]
+[INFO][GetImageCd.go:38]2020/02/03 14:05:24 [1023]
+[INFO][GetImageCd.go:66]2020/02/03 14:05:24 [map[conn:192.168.3.131:6379 dbNum:0 key:ihome password:123456]]

@@ -33,6 +33,14 @@ func main() {
 	router.POST("/api/v1.0/users", handler.PostReg)
 	//获取session
 	router.GET("/api/v1.0/session", handler.GetSession)
+	//登陆
+	router.POST("/api/v1.0/sessions", handler.PostLogin)
+	//退出登陆
+	router.DELETE("/api/v1.0/session", handler.DeleteSession)
+	//获得用户信息
+	router.GET("/api/v1.0/user", handler.GetUserInfo)
+	//上传头像
+	router.POST("/api/v1.0/user/avatar", handler.PostAvatar)
 
 	//映射静态页面
 	router.NotFound = http.FileServer(http.Dir("html"))
